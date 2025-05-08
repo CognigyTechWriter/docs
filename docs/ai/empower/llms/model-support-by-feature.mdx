@@ -1,0 +1,68 @@
+---
+title: "Model Support by Feature"
+slug: "model-support-by-feature"
+description: "The Model Support by Feature table outlines the LLM providers supported by Cognigy.AI and shows the standard models along with their compatibility with Cognigy.AI features."
+mode: wide
+---
+
+# Model Support by Feature
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.99-blue.svg)](../../../release-notes/4.99.md)
+
+The table provides an overview of the LLM providers supported by Cognigy.AI, detailing the standard models and their compatibility with Cognigy.AI features.
+You can also add a custom model that is not presented in the table.
+To do so, select the **Custom Model** parameter when creating a model and specify both the model type and name.
+For more information about adding a custom or standard model for a selected LLM provider,
+refer to the [All LLM Providers](providers/all-providers.md) page.
+
+## AI Model Feature Comparison
+
+| Models | Design-Time Features |  |  |  | Run-Time Features |  |  |  |  |  |  |  |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|  | Intent Sentence Generation | Flow Generation | Adaptive Card Generation | Lexicon Generation | AI Enhanced Outputs | GPT Conversation Node | LLM Prompt Node | Answer Extraction | Knowledge Search | Sentiment Analysis | NLU Embedding Model | AI Agent Node |
+| **Microsoft Azure OpenAI** |  |  |  |  |  |  |  |  |  |  |  |  |
+| [gpt-3.5-turbo (ChatGPT) (Legacy)](https://platform.openai.com/docs/deprecations) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ |
+| [gpt-3.5-turbo-instruct (Legacy)](https://platform.openai.com/docs/deprecations) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| [gpt-4 (Legacy)](https://platform.openai.com/docs/deprecations) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| gpt-4o | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| gpt-4o-mini | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| text-embedding-ada-002 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| text-embedding-3-small<sup>[1](#footnote1)</sup> | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| text-embedding-3-large<sup>[1](#footnote1)</sup> | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ | ❌ |
+| **OpenAI** |  |  |  |  |  |  |  |  |  |  |  |  |
+| [gpt-3.5-turbo (ChatGPT) (Legacy)](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-retirements#current-models) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ❌ |
+| [gpt-3.5-turbo-instruct (Legacy)](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-retirements#current-models) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| [gpt-4 (Legacy)](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/model-retirements#current-models) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| gpt-4o | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| gpt-4o-mini | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ | ✅ |
+| text-embedding-ada-002 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| text-embedding-3-small<sup>[1](#footnote1)</sup> | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| text-embedding-3-large<sup>[1](#footnote1)</sup> | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ | ❌ |
+| **OpenAI-Compatible** |  |  |  |  |  |  |  |  |  |  |  |  |
+| OpenAI-compatible LLMs | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| **Anthropic** |  |  |  |  |  |  |  |  |  |  |  |  |
+| claude-3-opus | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| claude-3-haiku | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| claude-3-sonnet | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| claude-3-5-sonnet | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| claude-3-7-sonnet | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| [claude-v1-100k (Legacy)](https://docs.anthropic.com/claude/docs/legacy-model-guide#anthropics-legacy-models) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| [claude-instant-v1 (Legacy)](https://docs.anthropic.com/claude/docs/legacy-model-guide#anthropics-legacy-models) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| anthropic.claude-3-5-sonnet-20240620-v1:0 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| **Google Vertex** |  |  |  |  |  |  |  |  |  |  |  |  |
+| text-bison-001 (Bard) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Google Gemini** |  |  |  |  |  |  |  |  |  |  |  |  |
+| [gemini-1.0-pro (Legacy)](https://cloud.google.com/vertex-ai/generative-ai/docs/deprecations/gemini-1.0-pro) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| gemini-1.5-flash | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| gemini-1.5-pro | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+
+<div id="footnotes">
+<sup>1</sup>  Indicates a newer version of the embedding model.
+</div>
+
+
+## More Information
+
+- [Overview](overview.md)
+- [All LLM Providers](providers/all-providers.md)
+- [Other LLM Operations](other-operations.md)

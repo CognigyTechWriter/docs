@@ -1,0 +1,214 @@
+/* image */
+.image-center {
+    margin: auto;
+}
+
+.image-center#specific-image {
+    margin: auto;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #A4A4A4;
+    border-width: 1px;
+}
+
+.md-grid {
+    max-width: 76rem;
+}
+
+.md-typeset .emojione,
+.md-typeset .gemoji,
+.md-typeset .twemoji {
+    --md-icon-size: 0.85rem;
+    display: inline-flex;
+    height: var(--md-icon-size);
+    vertical-align: text-top;
+}
+
+@media screen and (min-width: 60em) {
+    .md-search__input {
+        color: inherit;
+        font-size: .65rem;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .md-search__suggest {
+        font-size: .65rem;
+    }
+}
+
+.md-sidebar__scrollwrap:focus-within,
+.md-sidebar__scrollwrap:hover {
+    scrollbar-color: #9e9e9e #0000;
+}
+
+[dir=ltr] .md-source__icon+.md-source__repository {
+    font-size: 0.6rem;
+}
+
+.md-tabs__link {
+    font-size: .65rem;
+    margin-top: .7rem;
+}
+
+.md-typeset {
+    font-size: 0.7rem;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+    font-size: .6rem;
+}
+
+.md-icon svg {
+    padding-top: 0.2rem;
+    display: block;
+    height: 1.15rem;
+    width: 1.15rem;
+}
+
+.md-nav {
+    font-size: .6rem;
+}
+
+.md-banner {
+    background: #007aff;
+}
+
+.md-banner strong {
+    white-space: nowrap;
+}
+
+.md-banner a,
+.md-banner strong {
+    color: var(--md-footer-fg-color);
+}
+
+.md-banner a:focus,
+.md-banner a:hover {
+    color: currentcolor;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.md-footer {
+    background: linear-gradient(to right, #33BED2, #A166FF, #025AFB);
+    /* Adjust colors*/
+}
+
+.md-copyright {
+    font-size: .6rem;
+}
+
+.md-social__link svg {
+    max-height: .7rem;
+}
+
+.md-tags {
+    --md-accent-fg-color: #9e9e9e;
+}
+
+ol {
+    list-style-type: decimal !important;
+}
+
+ol ol {
+    list-style-type: decimal !important;
+}
+
+/* Style top-level list items */
+ol>li {
+    counter-increment: item;
+    /* Increment the counter */
+}
+
+/* Style nested list items */
+ol ol {
+    counter-reset: subitem;
+}
+
+ol ol>li {
+    counter-increment: subitem;
+}
+
+ol ol>li::before {
+    content: counters(item, ".") "." counter(subitem) " ";
+    margin-left: -20px;
+}
+
+ol ol>li::marker {
+    content: "";
+}
+
+.md-typeset .admonition.info,
+.md-typeset details.info {
+    border-color: rgb(255, 255, 255);
+}
+
+.md-typeset .info>.admonition-title,
+.md-typeset .info>summary {
+    background-color: rgb(250, 250, 250);
+    border-radius: 0.25rem;
+}
+
+.md-typeset .info>.admonition-title::before,
+.md-typeset .info>summary::before {
+    background-color: rgb(150, 150, 150);
+    border-radius: 0.25rem;
+}
+
+.md-typeset .info>.admonition-title::after,
+.md-typeset .info>summary::after {
+    background-color: rgb(150, 150, 150);
+}
+
+.md-typeset details.info:focus-within {
+    box-shadow: none !important;
+}
+
+/* Style for collapsed state */
+.md-typeset details.info:not([open]) summary {
+    border-radius: 0.25rem;
+}
+
+/* grid cards*/
+.md-content .grid.cards {
+    margin: 1rem 0 !important;
+    margin-left: 0 !important;
+}
+
+.md-content .grid.cards>ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem 0.45rem;
+    /* First value (1rem) for row gap, second value (0.5rem) for column gap */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.md-content .grid.cards>ul>li {
+    border: .05rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: .8rem;
+    background-color: var(--md-default-bg-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.md-content .grid.cards>ul>li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.md-content .grid.cards>ul>li>p:first-child {
+    margin-top: 0;
+}
+
+.md-content .grid.cards>ul>li>hr {
+    margin: 0.5rem 0;
+}
+
+.md-content .grid.cards>ul>li>p:last-child {
+    margin-bottom: 0;
+}
