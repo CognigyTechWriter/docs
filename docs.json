@@ -815,32 +815,222 @@
           ]
       },
       {
-        "dropdown": "xApps ",
-        "icon": "layout-grid",
+        "dropdown": "xApps",
+        "icon": "package",
         "pages": [
-          "api-reference/get",
-          "api-reference/post",
-          "api-reference/delete"
+          "docs/xApps/index",
+          {
+            "group": "Overview",
+            "pages": [
+              "docs/xApps/overview",
+              "docs/xApps/use-cases"
+            ]
+          },
+          {
+            "group": "Build an xApp",
+            "pages": [
+              "docs/xApps/build/overview",
+              "docs/xApps/build/first-xApp",
+              "docs/xApps/build/xApp-with-multi-channels",
+              "docs/xApps/build/standalone-xApp",
+              "docs/xApps/build/custom-xApp-node",
+              "docs/xApps/build/overlay"
+            ]
+          },
+          {
+            "group": "xApp Security",
+            "pages": [
+              "docs/xApps/security/secure-xApp-from-xss"
+            ]
+          },
+          {
+            "group": "Miscellaneous",
+            "pages": [
+              "docs/xApps/architecture",
+              "docs/xApps/tokens",
+              "docs/xApps/api",
+              "docs/xApps/supported-browsers-and-channels"
+            ]
+          }
         ]
       },
       {
-        "dropdown": "AI Copilot ",
-        "icon": "rocket",
+        "dropdown": "AI Copilot",
+        "icon": "bot",
         "pages": [
-          "api-reference/get",
-          "api-reference/post",
-          "api-reference/delete"
+          "docs/ai-copilot/index",
+          {
+            "group": "Overview",
+            "pages": [
+              "docs/ai-copilot/overview",
+              "docs/ai-copilot/getting-started"
+            ]
+          },
+          {
+            "group": "Integrate, Configure, and Embed",
+            "pages": [
+              "docs/ai-copilot/contact-center-integration",
+              "docs/ai-copilot/configuration",
+              "docs/ai-copilot/plug-and-play-widgets",
+              "docs/ai-copilot/embedding"
+            ]
+          },
+          {
+            "group": "Chat AI Copilot",
+            "pages": [
+              "docs/ai-copilot/chat"
+            ]
+          },
+          {
+            "group": "Voice AI Copilot",
+            "pages": [
+              "docs/ai-copilot/voice/voice-overview",
+              "docs/ai-copilot/voice/transfer-node"
+            ]
+          },
+          {
+            "group": "On-Premises Installation",
+            "pages": [
+              "docs/ai-copilot/installation/overview",
+              "docs/ai-copilot/installation/browser-requirements",
+              "docs/ai-copilot/architecture",
+              "docs/ai-copilot/installation/version-compatibility-matrix",
+              "docs/ai-copilot/installation/prerequisites",
+              "docs/ai-copilot/installation/installation-process"
+            ]
+          },
+          {
+            "group": "Upgrade and Migration Guides",
+            "pages": [
+              "docs/ai-copilot/installation/migration/overview",
+              "docs/ai-copilot/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration",
+              "docs/ai-copilot/installation/migration/ai-copilot-new-dns-names-migration"
+            ]
+          }
         ]
       },
       {
-        "dropdown": "Live Agent ",
+        "dropdown": "Live Agent",
         "icon": "headset",
         "pages": [
-          "api-reference/get",
-          "api-reference/post",
-          "api-reference/delete"
+          "docs/live-agent/index",
+          {
+            "group": "Overview",
+            "pages": [
+              "docs/live-agent/overview"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "docs/live-agent/getting-started/overview",
+              "docs/live-agent/getting-started/live-agent-setup/live-agent-setup-org",
+              "docs/live-agent/getting-started/live-agent-setup/live-agent-setup-inbox",
+              "docs/live-agent/getting-started/live-agent-setup/live-agent-setup-handover",
+              "docs/live-agent/getting-started/live-agent-setup/live-agent-setup-handover-endpoint",
+              "docs/live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow",
+              "docs/live-agent/getting-started/live-agent-setup/live-agent-setup-agents",
+              "docs/live-agent/getting-started/live-agent-setup/live-agent-setup-additional-inbox",
+              "docs/live-agent/glossary"
+            ]
+          },
+          {
+            "group": "Conversations",
+            "pages": [
+              "docs/live-agent/conversation/overview",
+              "docs/live-agent/conversation/assign-conversations",
+              "docs/live-agent/conversation/conversation-queue/overview",
+              "docs/live-agent/conversation/conversation-queue/real-time-queue-notifications",
+              "docs/live-agent/conversation/conversation-routing/overview",
+              "docs/live-agent/conversation/conversation-routing/manual-mode",
+              "docs/live-agent/conversation/conversation-routing/automatic-mode",
+              "docs/live-agent/conversation/send-reply",
+              "docs/live-agent/conversation/search-and-filter",
+              "docs/live-agent/conversation/other-operations"
+            ]
+          },
+          {
+            "group": "Assistants",
+            "pages": [
+              "docs/live-agent/assistants/overview",
+              "docs/live-agent/assistants/ai-copilot-whisper",
+              "docs/live-agent/assistants/ai-copilot",
+              "docs/live-agent/assistants/ai-copilot-bot"
+            ]
+          },
+          {
+            "group": "Analytics Tools",
+            "pages": [
+              "docs/live-agent/reports/overview",
+              "docs/live-agent/reports/supervisor-overview",
+              "docs/live-agent/reports/admin/overview",
+              "docs/live-agent/reports/admin/conversations",
+              "docs/live-agent/reports/admin/agents",
+              "docs/live-agent/reports/admin/labels",
+              "docs/live-agent/reports/admin/inboxes",
+              "docs/live-agent/reports/admin/teams",
+              "docs/live-agent/tools/odata-endpoint"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "docs/live-agent/settings/overview",
+              "docs/live-agent/settings/agents",
+              "docs/live-agent/settings/teams",
+              "docs/live-agent/settings/inboxes",
+              "docs/live-agent/settings/labels",
+              "docs/live-agent/settings/skills",
+              "docs/live-agent/settings/automation-rules",
+              "docs/live-agent/settings/canned-responses",
+              "docs/live-agent/settings/attachments",
+              "docs/live-agent/settings/audit-logs",
+              "docs/live-agent/settings/account-settings"
+            ]
+          },
+          {
+            "group": "Access Management",
+            "pages": [
+              "docs/live-agent/roles"
+            ]
+          },
+          {
+            "group": "User Profile and Notifications",
+            "pages": [
+              "docs/live-agent/notifications",
+              "docs/live-agent/profile-settings"
+            ]
+          },
+          {
+            "group": "On-Premises Installation",
+            "pages": [
+              "docs/live-agent/installation/browser-requirements",
+              "docs/live-agent/installation/deployment/version-compatibility-matrix",
+              "docs/live-agent/installation/deployment/architecture",
+              "docs/live-agent/installation/deployment/prerequisites",
+              "docs/live-agent/installation/deployment/installation-using-helm",
+              "docs/live-agent/installation/deployment/cognigy-live-agent-oauth",
+              "docs/live-agent/installation/helm-values/helm-values",
+              "docs/live-agent/installation/helm-values/database",
+              "docs/live-agent/installation/helm-values/redis",
+              "docs/live-agent/installation/helm-values/storage",
+              "docs/live-agent/installation/helm-values/smtp",
+              "docs/live-agent/installation/helm-values/email-templates",
+              "docs/live-agent/installation/deployment/installation-updates",
+              "docs/live-agent/installation/migration/overview",
+              "docs/live-agent/installation/migration/helm-dependencies",
+              "docs/live-agent/installation/migration/redis-sentinel"
+            ]
+          },
+          {
+            "group": "Miscellaneous",
+            "pages": [
+              "docs/live-agent/FAQs"
+            ]
+          }
         ]
-      },
+      }
+    ,
       {
         "dropdown": "AI Ops Center ",
         "icon": "activity",
@@ -851,34 +1041,201 @@
         ]
       },
       {
-        "dropdown": "Insights ",
+        "dropdown": "Insights",
         "icon": "chart-column",
         "pages": [
-          "api-reference/get",
-          "api-reference/post",
-          "api-reference/delete"
+          "docs/insights/index",
+          {
+            "group": "Overview",
+            "pages": [
+              "docs/insights/overview",
+              "docs/insights/glossary"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "docs/insights/reports/overview",
+              "docs/insights/reports/engagement",
+              "docs/insights/reports/nlu-performance",
+              "docs/insights/reports/live-agent",
+              "docs/insights/reports/goals"
+            ]
+          },
+          {
+            "group": "Explorers",
+            "pages": [
+              "docs/insights/explorers/step",
+              "docs/insights/explorers/transcript",
+              "docs/insights/explorers/message"
+            ]
+          },
+          {
+            "group": "Filter and Sort",
+            "pages": [
+              "docs/insights/global-filters"
+            ]
+          },
+          {
+            "group": "Data Management",
+            "pages": [
+              "docs/insights/data-management/pre-aggregation",
+              "docs/insights/data-management/time-zone-with-pre-aggregation",
+              "docs/insights/data-management/time-zone",
+              "docs/insights/data-management/ttl"
+            ]
+          },
+          {
+            "group": "Download Reports",
+            "pages": [
+              "docs/insights/download-reports"
+            ]
+          }
         ]
-      },
+      }
+    ,
       {
-        "dropdown": "Support ",
+        "dropdown": "Support",
         "icon": "fire-extinguisher",
         "pages": [
-          "api-reference/get",
-          "api-reference/post",
-          "api-reference/delete"
+          "docs/help/index",
+          "docs/help/get-help"
         ]
-      },
+      }
+    ,
       {
         "dropdown": "Release Notes",
-        "icon": "history",
+        "icon": "calendar-days",
         "pages": [
-          "api-reference/get",
-          "api-reference/post",
-          "api-reference/delete"
+          "docs/release-notes/index",
+          "docs/release-notes/deprecations-and-removals",
+          {
+            "group": "Product Versions",
+            "pages": [
+              {
+                "group": "4.10x",
+                "pages": ["docs/release-notes/4.100"]
+              },
+              {
+                "group": "4.9x",
+                "pages": [
+                  "docs/release-notes/4.99",
+                  "docs/release-notes/4.98",
+                  "docs/release-notes/4.97",
+                  "docs/release-notes/4.96",
+                  "docs/release-notes/4.95",
+                  "docs/release-notes/4.94",
+                  "docs/release-notes/4.93",
+                  "docs/release-notes/4.92",
+                  "docs/release-notes/4.91",
+                  "docs/release-notes/4.90"
+                ]
+              },
+              {
+                "group": "4.8x",
+                "pages": [
+                  "docs/release-notes/4.89",
+                  "docs/release-notes/4.88",
+                  "docs/release-notes/4.87",
+                  "docs/release-notes/4.86",
+                  "docs/release-notes/4.85",
+                  "docs/release-notes/4.84",
+                  "docs/release-notes/4.83",
+                  "docs/release-notes/4.82",
+                  "docs/release-notes/4.81",
+                  "docs/release-notes/4.80"
+                ]
+              },
+              {
+                "group": "4.7x",
+                "pages": [
+                  "docs/release-notes/4.79",
+                  "docs/release-notes/4.78",
+                  "docs/release-notes/4.77",
+                  "docs/release-notes/4.76",
+                  "docs/release-notes/4.75",
+                  "docs/release-notes/4.74",
+                  "docs/release-notes/4.73",
+                  "docs/release-notes/4.72",
+                  "docs/release-notes/4.71",
+                  "docs/release-notes/4.70"
+                ]
+              },
+              {
+                "group": "4.6x",
+                "pages": [
+                  "docs/release-notes/4.69",
+                  "docs/release-notes/4.68",
+                  "docs/release-notes/4.67",
+                  "docs/release-notes/4.66",
+                  "docs/release-notes/4.65",
+                  "docs/release-notes/4.64",
+                  "docs/release-notes/4.63",
+                  "docs/release-notes/4.62",
+                  "docs/release-notes/4.61",
+                  "docs/release-notes/4.60"
+                ]
+              },
+              {
+                "group": "4.5x",
+                "pages": [
+                  "docs/release-notes/4.59",
+                  "docs/release-notes/4.58",
+                  "docs/release-notes/4.57",
+                  "docs/release-notes/4.56",
+                  "docs/release-notes/4.55",
+                  "docs/release-notes/4.54",
+                  "docs/release-notes/4.53",
+                  "docs/release-notes/4.52",
+                  "docs/release-notes/4.51",
+                  "docs/release-notes/4.50"
+                ]
+              },
+              {
+                "group": "4.4x",
+                "pages": [
+                  "docs/release-notes/4.49",
+                  "docs/release-notes/4.48",
+                  "docs/release-notes/4.47",
+                  "docs/release-notes/4.46",
+                  "docs/release-notes/4.45",
+                  "docs/release-notes/4.44",
+                  "docs/release-notes/4.43",
+                  "docs/release-notes/4.42",
+                  "docs/release-notes/4.41",
+                  "docs/release-notes/4.40"
+                ]
+              },
+              {
+                "group": "4.3x",
+                "pages": [
+                  "docs/release-notes/4.39",
+                  "docs/release-notes/4.38",
+                  "docs/release-notes/4.37",
+                  "docs/release-notes/4.36",
+                  "docs/release-notes/4.35",
+                  "docs/release-notes/4.34",
+                  "docs/release-notes/4.33",
+                  "docs/release-notes/4.32",
+                  "docs/release-notes/4.31",
+                  "docs/release-notes/4.30"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Earlier Product Versions",
+            "pages": [
+              "docs/release-notes/earlier-versions/overview",
+              "docs/release-notes/earlier-versions/cognigy-ai-pre-4.30",
+              "docs/release-notes/earlier-versions/insights-pre-4.30",
+              "docs/release-notes/earlier-versions/live-agent-pre-4.30"
+            ]
+          }
         ]
       }
     ]
-  },
+      },
   "logo": {
     "light": "/docs/_assets/Cognigy-black.svg",
     "dark": "/docs/_assets/Cognigy-white.svg"

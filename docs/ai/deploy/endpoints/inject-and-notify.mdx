@@ -15,19 +15,19 @@ For this use case, Cognigy.AI provides the Notify and Inject-API.
 
 Our inject API can be used to send an arbitrary pair of **text** and **data** into our system. The input will then get forwarded into the flow. The correct flow is determined by the endpoint which itself is identified using the given **URLToken**. Inject should be used if you want to send complex information to the bot user. You can e.g. build a flow that generates a nice **list** or **gallery element** based on a certain input. You send a simple message into your flow, e.g. "makeGallery" and the flow sends the composed gallery through the correct endpoint to the bot user. Notify can't be utilized for this.
 
-<figure>
+<Frame>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoints/inject.png" width="100%" />
   <figcaption>Schema which shows the data-flow during an inject call</figcaption>
-</figure>
+</Frame>
 
 ## Notify
 
 Notify, in contrast to inject, can only be used to send a simple **text** and/or **data** message directly to the user. The message will not get forwarded into a flow and hence you don't have further controlled about what the user actually gets.
 
-<figure>
+<Frame>
   <img class="image-center" src="../../../../_assets/ai/deploy/endpoints/notify.png" width="100%" />
   <figcaption>Schema which shows the data-flow during a notify call</figcaption>
-</figure>
+</Frame>
 
 ## Triggering the External long-running process
 

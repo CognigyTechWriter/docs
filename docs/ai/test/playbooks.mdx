@@ -7,9 +7,9 @@
 
 _Playbooks_ are automated conversations, which can help you test your Flows and ensure that they work as expected. Playbooks include Assertions that check different aspects of your Flow, giving you more confidence in your conversational experiences.
 
-<figure>
+<Frame>
   <img class="image-center" src="../../../../_assets/ai/test/playbooks/playbook.png" width="70%" />
-</figure>
+</Frame>
 
 You can turn any conversation in your Interaction Panel directly into a playbook:
 
@@ -55,15 +55,15 @@ All Assertion results can be inverted.
 
 In addition to executing a Playbook in the Interaction Panel, you can also schedule a Playbook Run from the Playbook Editor. When you open a Playbook from the list, you will now see a new tab named **Run** that will list all the previously scheduled Playbook runs.
 
-<figure>
+<Frame>
   <img class="image-center" src="../../../../_assets/ai/test/playbooks/playbook-runs.png" width="70%" />
-</figure>
+</Frame>
 
 In order to schedule a new Run, click the *Run* button. In the dialog box that opens, select the Snapshot, Flow and Locale against which you want to run your current Playbook. Configuring a Playbook Run in this dialog box is similar to configuring a Playbook Execution in the Interaction Panel. When done, click the **Run** button in the dialog box.
 
-<figure>
+<Frame>
   <img class="image-center" src="../../../../_assets/ai/test/playbooks/playbook-runs-dialog.png" width="90%" />
-</figure>
+</Frame>
 
 !!! tip "Schedule playbook runs in bulk using the Cognigy CLI"
     You can schedule multiple Playbook Runs simultaneously using the `run` command in the [Cognigy CLI](https://www.npmjs.com/package/@cognigy/cognigy-cli) than scheduling them one by one via the UI.
@@ -72,9 +72,9 @@ The Playbook Run will be created in the background, and a success notification w
 
 If the status of a Run is **Failed**, it means that there is one or more failing assertions in the Playbook Run. If the status is **Successful**, then all the Playbook assertions have passed. Clicking on a Playbook Run can give you further information on which assertions failed or passed, helping you to see what went wrong or right with the executed Flow.
 
-<figure>
+<Frame>
   <img class="image-center" src="../../../../_assets/ai/test/playbooks/playbook-run-details.png" width="70%" />
-</figure>
+</Frame>
 
 ### Schedule a Run from the Playbooks List
 
