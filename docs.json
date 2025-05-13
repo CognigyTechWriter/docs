@@ -7,6 +7,23 @@
     "light": "#0066FF",
     "dark": "#2E0459"
   },
+  "fonts": {
+    "body": {
+      "family": "Roboto"
+    },
+    "heading": {
+      "family": "Roboto"
+    }
+  },
+  "banner": {
+    "content": "Help us improve our product documentation on `docs.cognigy.com` by sharing your thoughts in a [quick survey](https://forms.office.com/e/xnqneVasp2). Your feedback shapes the future of our content!"
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude"]
+  },
+  "background": {
+    "decoration": "gradient"
+  },
   "favicon": "/docs/_assets/favicon.webp",
   "icons": {
     "library": "lucide"
