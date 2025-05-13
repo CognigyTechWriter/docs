@@ -1,0 +1,7 @@
+#table-of-contents {
+  margin-left: 30px;   /* Outside the box (distance between elements) */
+}
+
+#content-area {
+  padding-right: 0px;  /* Inside the box (content and border) */
+}
