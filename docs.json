@@ -34,505 +34,418 @@
         "dropdown": "AI",
         "icon": "brain-circuit",
         "pages": [
-          "docs/ai/overview/about-cognigy-ai",
-          "docs/ai/overview/ai-workforce",
-          "docs/ai/overview/key-features",
+          "docs/ai/about-cognigy-ai",
+          "docs/ai/key-features",
+          "docs/ai/ai-workforce",
           "docs/ai/glossary",
           {
+            "group": "User Interface Guide",
+            "pages": [
+              "docs/ai/user-interface/main-page",
+              "docs/ai/user-interface/project-page",
+              "docs/ai/user-interface/resource-pages"
+            ]
+          },
+          { 
             "group": "AI Agents",
             "pages": [
-              "docs/ai/overview/getting-started-with-ai-agents",
-              "quickstart",
+              "docs/ai/agents/overview",
+              "docs/ai/agents/quickstart",              
+              "docs/ai/agents/getting-started-with-ai-agents",
               {
                 "group": "Build",
                 "pages": [
-                  "docs/ai/build/projects",
+                  "docs/ai/agents/build/manage-ai-agents",
                   {
-                    "group": "Flows",
+                    "group": "Projects and Flows",
                     "pages": [
-                      "docs/ai/build/flows/overview",
-                      "docs/ai/build/flows/editor"
-                    ]
-                  },
-                  {
-                    "group": "Nodes",
-                    "pages": [
-                      "docs/ai/build/nodes/overview",
-                      "docs/ai/build/nodes/node-search",
-                      "docs/ai/build/nodes/channels",
+                      "docs/ai/agents/build/projects",
+                      "docs/ai/agents/build/flows/overview",
+                      "docs/ai/agents/build/flows/editor",
                       {
-                        "group": "Node Reference",
+                        "group": "Nodes",
                         "pages": [
-                          "docs/ai/build/node-reference/overview",
+                          "docs/ai/agents/build/nodes/overview",
+                          "docs/ai/agents/build/nodes/node-search",
+                          "docs/ai/agents/build/nodes/channels",
                           {
-                            "group": "Basic",
+                            "group": "Node Reference",
                             "pages": [
-                              "docs/ai/build/node-reference/basic/overview",
-                              "docs/ai/build/node-reference/basic/say",
-                              "docs/ai/build/node-reference/basic/question",
-                              "docs/ai/build/node-reference/basic/optional-question",
-                              "docs/ai/build/node-reference/basic/send-text",
-                              "docs/ai/build/node-reference/basic/debug-message",
+                              "docs/ai/agents/build/node-reference/overview",
                               {
-                                "group": "Code",
+                                "group": "Basic",
                                 "pages": [
-                                  "docs/ai/build/node-reference/basic/code/overview",
-                                  "docs/ai/build/node-reference/basic/code/actions",
-                                  "docs/ai/build/node-reference/basic/code/modules",
-                                  "docs/ai/build/node-reference/basic/code/channel-output",
-                                  "docs/ai/build/node-reference/basic/code/ai-default-channel-formats",
-                                  "docs/ai/build/node-reference/basic/code/analytics-data"
-                                ]
-                              }
-                            ]
-                          },
-                          {
-                            "group": "Logic",
-                            "pages": [
-                              "docs/ai/build/node-reference/logic/overview",
-                              "docs/ai/build/node-reference/logic/add-to-context",
-                              "docs/ai/build/node-reference/logic/execute-flow",
-                              "docs/ai/build/node-reference/logic/go-to",
-                              "docs/ai/build/node-reference/logic/if",
-                              "docs/ai/build/node-reference/logic/interval",
-                              "docs/ai/build/node-reference/logic/lookup",
-                              "docs/ai/build/node-reference/logic/once",
-                              "docs/ai/build/node-reference/logic/remove-from-context",
-                              "docs/ai/build/node-reference/logic/reset-state",
-                              "docs/ai/build/node-reference/logic/set-state",
-                              "docs/ai/build/node-reference/logic/sleep",
-                              "docs/ai/build/node-reference/logic/stop-and-return",
-                              "docs/ai/build/node-reference/logic/switch-locale",
-                              "docs/ai/build/node-reference/logic/think",
-                              "docs/ai/build/node-reference/logic/wait-for-input"
-                            ]
-                          },
-                          {
-                            "group": "Voice",
-                            "pages": [
-                              "docs/ai/build/node-reference/voice/overview",
-                              {
-                                "group": "Generic Voice Nodes",
-                                "pages": [
-                                  "docs/ai/build/node-reference/voice/generic/overview",
-                                  "docs/ai/build/node-reference/voice/generic/barge-in-config",
-                                  "docs/ai/build/node-reference/voice/generic/continuous-asr-config",
-                                  "docs/ai/build/node-reference/voice/generic/dtmf-collect-config",
-                                  "docs/ai/build/node-reference/voice/generic/hang-up",
-                                  "docs/ai/build/node-reference/voice/generic/mute-speech-input",
-                                  "docs/ai/build/node-reference/voice/generic/play-url",
-                                  "docs/ai/build/node-reference/voice/generic/send-metadata",
-                                  "docs/ai/build/node-reference/voice/generic/session-speech-parameters-config",
-                                  "docs/ai/build/node-reference/voice/generic/transfer",
-                                  "docs/ai/build/node-reference/voice/generic/user-input-timeout-config"
+                                  "docs/ai/agents/build/node-reference/basic/overview",
+                                  "docs/ai/agents/build/node-reference/basic/say",
+                                  "docs/ai/agents/build/node-reference/basic/question",
+                                  "docs/ai/agents/build/node-reference/basic/optional-question",
+                                  "docs/ai/agents/build/node-reference/basic/send-text",
+                                  "docs/ai/agents/build/node-reference/basic/debug-message"
                                 ]
                               },
                               {
-                                "group": "Voice Gateway",
+                                "group": "Logic",
                                 "pages": [
-                                  "docs/ai/build/node-reference/voice/voice-gateway/overview",
-                                  "docs/ai/build/node-reference/voice/voice-gateway/call-recording",
-                                  "docs/ai/build/node-reference/voice/voice-gateway/dtmf",
-                                  "docs/ai/build/node-reference/voice/voice-gateway/hangup",
-                                  "docs/ai/build/node-reference/voice/voice-gateway/mute-speech-input",
-                                  "docs/ai/build/node-reference/voice/voice-gateway/parameter-details",
-                                  "docs/ai/build/node-reference/voice/voice-gateway/play",
-                                  "docs/ai/build/node-reference/voice/voice-gateway/send-metadata",
-                                  "docs/ai/build/node-reference/voice/voice-gateway/set-session-config",
-                                  "docs/ai/build/node-reference/voice/voice-gateway/transfer"
+                                  "docs/ai/agents/build/node-reference/logic/overview",
+                                  "docs/ai/agents/build/node-reference/logic/add-to-context",
+                                  "docs/ai/agents/build/node-reference/logic/execute-flow",
+                                  "docs/ai/agents/build/node-reference/logic/go-to",
+                                  "docs/ai/agents/build/node-reference/logic/if",
+                                  "docs/ai/agents/build/node-reference/logic/interval",
+                                  "docs/ai/agents/build/node-reference/logic/lookup",
+                                  "docs/ai/agents/build/node-reference/logic/once",
+                                  "docs/ai/agents/build/node-reference/logic/remove-from-context",
+                                  "docs/ai/agents/build/node-reference/logic/reset-state",
+                                  "docs/ai/agents/build/node-reference/logic/set-state",
+                                  "docs/ai/agents/build/node-reference/logic/sleep",
+                                  "docs/ai/agents/build/node-reference/logic/stop-and-return",
+                                  "docs/ai/agents/build/node-reference/logic/switch-locale",
+                                  "docs/ai/agents/build/node-reference/logic/think",
+                                  "docs/ai/agents/build/node-reference/logic/wait-for-input"
                                 ]
                               },
                               {
-                                "group": "AudioCodes",
+                                "group": "Voice",
                                 "pages": [
-                                  "docs/ai/build/node-reference/voice/audiocodes/overview",
-                                  "docs/ai/build/node-reference/voice/audiocodes/call-recording",
-                                  "docs/ai/build/node-reference/voice/audiocodes/hangup",
-                                  "docs/ai/build/node-reference/voice/audiocodes/play-url",
-                                  "docs/ai/build/node-reference/voice/audiocodes/send-meta-data",
-                                  "docs/ai/build/node-reference/voice/audiocodes/send-message",
-                                  "docs/ai/build/node-reference/voice/audiocodes/set-session-params",
-                                  "docs/ai/build/node-reference/voice/audiocodes/transfer-vg"
+                                  "docs/ai/agents/build/node-reference/voice/overview",
+                                  {
+                                    "group": "Generic Voice Nodes",
+                                    "pages": [
+                                      "docs/ai/agents/build/node-reference/voice/generic/overview",
+                                      "docs/ai/agents/build/node-reference/voice/generic/barge-in-config",
+                                      "docs/ai/agents/build/node-reference/voice/generic/continuous-asr-config",
+                                      "docs/ai/agents/build/node-reference/voice/generic/dtmf-collect-config",
+                                      "docs/ai/agents/build/node-reference/voice/generic/hang-up",
+                                      "docs/ai/agents/build/node-reference/voice/generic/mute-speech-input",
+                                      "docs/ai/agents/build/node-reference/voice/generic/play-url",
+                                      "docs/ai/agents/build/node-reference/voice/generic/send-metadata",
+                                      "docs/ai/agents/build/node-reference/voice/generic/session-speech-parameters-config",
+                                      "docs/ai/agents/build/node-reference/voice/generic/transfer",
+                                      "docs/ai/agents/build/node-reference/voice/generic/user-input-timeout-config"
+                                    ]
+                                  },
+                                  {
+                                    "group": "Voice Gateway",
+                                    "pages": [
+                                      "docs/ai/agents/build/node-reference/voice/voice-gateway/overview",
+                                      "docs/ai/agents/build/node-reference/voice/voice-gateway/call-recording",
+                                      "docs/ai/agents/build/node-reference/voice/voice-gateway/dtmf",
+                                      "docs/ai/agents/build/node-reference/voice/voice-gateway/hangup",
+                                      "docs/ai/agents/build/node-reference/voice/voice-gateway/mute-speech-input",
+                                      "docs/ai/agents/build/node-reference/voice/voice-gateway/parameter-details",
+                                      "docs/ai/agents/build/node-reference/voice/voice-gateway/play",
+                                      "docs/ai/agents/build/node-reference/voice/voice-gateway/send-metadata",
+                                      "docs/ai/agents/build/node-reference/voice/voice-gateway/set-session-config",
+                                      "docs/ai/agents/build/node-reference/voice/voice-gateway/transfer"
+                                    ]
+                                  },
+                                  {
+                                    "group": "AudioCodes",
+                                    "pages": [
+                                      "docs/ai/agents/build/node-reference/voice/audiocodes/overview",
+                                      "docs/ai/agents/build/node-reference/voice/audiocodes/call-recording",
+                                      "docs/ai/agents/build/node-reference/voice/audiocodes/hangup",
+                                      "docs/ai/agents/build/node-reference/voice/audiocodes/play-url",
+                                      "docs/ai/agents/build/node-reference/voice/audiocodes/send-meta-data",
+                                      "docs/ai/agents/build/node-reference/voice/audiocodes/send-message",
+                                      "docs/ai/agents/build/node-reference/voice/audiocodes/set-session-params",
+                                      "docs/ai/agents/build/node-reference/voice/audiocodes/transfer-vg"
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "group": "Analytics",
+                                "pages": [
+                                  "docs/ai/agents/build/node-reference/analytics/overview",
+                                  "docs/ai/agents/build/node-reference/analytics/activate-profile",
+                                  "docs/ai/agents/build/node-reference/analytics/add-memory",
+                                  "docs/ai/agents/build/node-reference/analytics/blind-mode",
+                                  "docs/ai/agents/build/node-reference/analytics/complete-task",
+                                  "docs/ai/agents/build/node-reference/analytics/deactivate-profile",
+                                  "docs/ai/agents/build/node-reference/analytics/delete-profile",
+                                  "docs/ai/agents/build/node-reference/analytics/merge-profile",
+                                  "docs/ai/agents/build/node-reference/analytics/overwrite-analytics",
+                                  "docs/ai/agents/build/node-reference/analytics/request-rating",
+                                  "docs/ai/agents/build/node-reference/analytics/set-rating",
+                                  "docs/ai/agents/build/node-reference/analytics/track-goal",
+                                  "docs/ai/agents/build/node-reference/analytics/update-profile"
+                                ]
+                              },
+                              {
+                                "group": "Service",
+                                "pages": [
+                                  "docs/ai/agents/build/node-reference/service/overview",
+                                  "docs/ai/agents/build/node-reference/service/add-transcript-steps",
+                                  "docs/ai/agents/build/node-reference/service/check-agent-availability",
+                                  "docs/ai/agents/build/node-reference/service/close-handover",
+                                  "docs/ai/agents/build/node-reference/service/get-transcript",
+                                  "docs/ai/agents/build/node-reference/service/gpt-conversation",
+                                  "docs/ai/agents/build/node-reference/service/handover-to-agent",
+                                  "docs/ai/agents/build/node-reference/service/http-request",
+                                  "docs/ai/agents/build/node-reference/service/llm-prompt",
+                                  "docs/ai/agents/build/node-reference/service/mongo-db",
+                                  "docs/ai/agents/build/node-reference/service/ms-sql",
+                                  "docs/ai/agents/build/node-reference/service/set-handover-inactivity",
+                                  "docs/ai/agents/build/node-reference/service/trigger-function"
+                                ]
+                              },
+                              {
+                                "group": "AI",
+                                "pages": [
+                                  "docs/ai/agents/build/node-reference/ai/overview",
+                                  "docs/ai/agents/build/node-reference/ai/add-lexicon-keyphrase",
+                                  "docs/ai/agents/build/node-reference/ai/ai-agent",
+                                  "docs/ai/agents/build/node-reference/ai/ai-agent-handover",
+                                  "docs/ai/agents/build/node-reference/ai/clean-text",
+                                  "docs/ai/agents/build/node-reference/ai/copy-slots-to-context",
+                                  "docs/ai/agents/build/node-reference/ai/disable-slot-fillers",
+                                  "docs/ai/agents/build/node-reference/ai/enable-slot-fillers",
+                                  "docs/ai/agents/build/node-reference/ai/execute-cognigy-nlu",
+                                  "docs/ai/agents/build/node-reference/ai/fuzzy-search",
+                                  "docs/ai/agents/build/node-reference/ai/match-pattern",
+                                  "docs/ai/agents/build/node-reference/ai/regex-slot-filler",
+                                  "docs/ai/agents/build/node-reference/ai/resolve-tool-action"
+                                ]
+                              },
+                              {
+                                "group": "Data",
+                                "pages": [
+                                  "docs/ai/agents/build/node-reference/data/overview",
+                                  "docs/ai/agents/build/node-reference/data/datepicker",
+                                  "docs/ai/agents/build/node-reference/data/send-smtp-email",
+                                  "docs/ai/agents/build/node-reference/data/email-notification"
+                                ]
+                              },
+                              {
+                                "group": "AI Copilot",
+                                "pages": [
+                                  "docs/ai/agents/build/node-reference/ai-copilot/overview",
+                                  "docs/ai/agents/build/node-reference/ai-copilot/set-adaptive-card-tile",
+                                  "docs/ai/agents/build/node-reference/ai-copilot/set-html-tile",
+                                  "docs/ai/agents/build/node-reference/ai-copilot/set-iframe-tile",
+                                  "docs/ai/agents/build/node-reference/ai-copilot/identity-tile",
+                                  "docs/ai/agents/build/node-reference/ai-copilot/knowledge-tile",
+                                  "docs/ai/agents/build/node-reference/ai-copilot/next-action-tile",
+                                  "docs/ai/agents/build/node-reference/ai-copilot/send-data",
+                                  "docs/ai/agents/build/node-reference/ai-copilot/sentiment-tile",
+                                  "docs/ai/agents/build/node-reference/ai-copilot/set-grid",
+                                  "docs/ai/agents/build/node-reference/ai-copilot/transcript-tile"
+                                ]
+                              },
+                              {
+                                "group": "xApps",
+                                "pages": [
+                                  "docs/ai/agents/build/node-reference/xApp/overview",
+                                  "docs/ai/agents/build/node-reference/xApp/init-xApp-session",
+                                  "docs/ai/agents/build/node-reference/xApp/get-xApp-session-PIN",
+                                  "docs/ai/agents/build/node-reference/xApp/set-AdaptiveCard-xApp-state",
+                                  "docs/ai/agents/build/node-reference/xApp/set-html-xApp-state"
+                                ]
+                              },
+                              {
+                                "group": "Other Nodes",
+                                "pages": [
+                                  "docs/ai/agents/build/node-reference/other-nodes/overview",
+                                  "docs/ai/agents/build/node-reference/other-nodes/knowledge-search",
+                                  "docs/ai/agents/build/node-reference/other-nodes/llm-entity-extract",
+                                  "docs/ai/agents/build/node-reference/other-nodes/log-message",
+                                  "docs/ai/agents/build/node-reference/other-nodes/search-extract-output",
+                                  "docs/ai/agents/build/node-reference/other-nodes/set-translation"
                                 ]
                               }
-                            ]
-                          },
-                          {
-                            "group": "Analytics",
-                            "pages": [
-                              "docs/ai/build/node-reference/analytics/overview",
-                              "docs/ai/build/node-reference/analytics/activate-profile",
-                              "docs/ai/build/node-reference/analytics/add-memory",
-                              "docs/ai/build/node-reference/analytics/blind-mode",
-                              "docs/ai/build/node-reference/analytics/complete-task",
-                              "docs/ai/build/node-reference/analytics/deactivate-profile",
-                              "docs/ai/build/node-reference/analytics/delete-profile",
-                              "docs/ai/build/node-reference/analytics/merge-profile",
-                              "docs/ai/build/node-reference/analytics/overwrite-analytics",
-                              "docs/ai/build/node-reference/analytics/request-rating",
-                              "docs/ai/build/node-reference/analytics/set-rating",
-                              "docs/ai/build/node-reference/analytics/track-goal",
-                              "docs/ai/build/node-reference/analytics/update-profile"
-                            ]
-                          },
-                          {
-                            "group": "Service",
-                            "pages": [
-                              "docs/ai/build/node-reference/service/overview",
-                              "docs/ai/build/node-reference/service/add-transcript-steps",
-                              "docs/ai/build/node-reference/service/check-agent-availability",
-                              "docs/ai/build/node-reference/service/close-handover",
-                              "docs/ai/build/node-reference/service/get-transcript",
-                              "docs/ai/build/node-reference/service/gpt-conversation",
-                              "docs/ai/build/node-reference/service/handover-to-agent",
-                              "docs/ai/build/node-reference/service/http-request",
-                              "docs/ai/build/node-reference/service/llm-prompt",
-                              "docs/ai/build/node-reference/service/mongo-db",
-                              "docs/ai/build/node-reference/service/ms-sql",
-                              "docs/ai/build/node-reference/service/set-handover-inactivity",
-                              "docs/ai/build/node-reference/service/trigger-function"
-                            ]
-                          },
-                          {
-                            "group": "AI",
-                            "pages": [
-                              "docs/ai/build/node-reference/ai/overview",
-                              "docs/ai/build/node-reference/ai/add-lexicon-keyphrase",
-                              "docs/ai/build/node-reference/ai/ai-agent",
-                              "docs/ai/build/node-reference/ai/ai-agent-handover",
-                              "docs/ai/build/node-reference/ai/clean-text",
-                              "docs/ai/build/node-reference/ai/copy-slots-to-context",
-                              "docs/ai/build/node-reference/ai/disable-slot-fillers",
-                              "docs/ai/build/node-reference/ai/enable-slot-fillers",
-                              "docs/ai/build/node-reference/ai/execute-cognigy-nlu",
-                              "docs/ai/build/node-reference/ai/fuzzy-search",
-                              "docs/ai/build/node-reference/ai/match-pattern",
-                              "docs/ai/build/node-reference/ai/regex-slot-filler",
-                              "docs/ai/build/node-reference/ai/resolve-tool-action"
-                            ]
-                          },
-                          {
-                            "group": "Data",
-                            "pages": [
-                              "docs/ai/build/node-reference/data/overview",
-                              "docs/ai/build/node-reference/data/datepicker",
-                              "docs/ai/build/node-reference/data/send-smtp-email",
-                              "docs/ai/build/node-reference/data/email-notification"
-                            ]
-                          },
-                          {
-                            "group": "AI Copilot",
-                            "pages": [
-                              "docs/ai/build/node-reference/ai-copilot/overview",
-                              "docs/ai/build/node-reference/ai-copilot/set-adaptive-card-tile",
-                              "docs/ai/build/node-reference/ai-copilot/set-html-tile",
-                              "docs/ai/build/node-reference/ai-copilot/set-iframe-tile",
-                              "docs/ai/build/node-reference/ai-copilot/identity-tile",
-                              "docs/ai/build/node-reference/ai-copilot/knowledge-tile",
-                              "docs/ai/build/node-reference/ai-copilot/next-action-tile",
-                              "docs/ai/build/node-reference/ai-copilot/send-data",
-                              "docs/ai/build/node-reference/ai-copilot/sentiment-tile",
-                              "docs/ai/build/node-reference/ai-copilot/set-grid",
-                              "docs/ai/build/node-reference/ai-copilot/transcript-tile"
-                            ]
-                          },
-                          {
-                            "group": "xApps",
-                            "pages": [
-                              "docs/ai/build/node-reference/xApp/overview",
-                              "docs/ai/build/node-reference/xApp/init-xApp-session",
-                              "docs/ai/build/node-reference/xApp/get-xApp-session-PIN",
-                              "docs/ai/build/node-reference/xApp/set-AdaptiveCard-xApp-state",
-                              "docs/ai/build/node-reference/xApp/set-html-xApp-state"
-                            ]
-                          },
-                          {
-                            "group": "Other Nodes",
-                            "pages": [
-                              "docs/ai/build/node-reference/other-nodes/overview",
-                              "docs/ai/build/node-reference/other-nodes/knowledge-search",
-                              "docs/ai/build/node-reference/other-nodes/llm-entity-extract",
-                              "docs/ai/build/node-reference/other-nodes/log-message",
-                              "docs/ai/build/node-reference/other-nodes/search-extract-output",
-                              "docs/ai/build/node-reference/other-nodes/set-translation"
                             ]
                           }
                         ]
                       }
-
                     ]
                   },
-                  {
-                    "group": "CognigyScript",
-                    "pages": [
-                      "docs/ai/build/cognigyscript",
-                      "docs/ai/build/tokens"
-                    ]
-                  },
-                  {
-                    "group": "Translation and Localization",
-                    "pages": [
-                      "docs/ai/build/translation-and-localization/localization",
-                      "docs/ai/build/translation-and-localization/auto-translation",
-                      "docs/ai/build/translation-and-localization/real-time-translation"
-                    ]
-                  },
-                  "docs/ai/build/connections",
-                  "docs/ai/build/extensions",
-                  "docs/ai/build/packages",
-                  "docs/ai/build/functions"
-                ]
-              },
-              {
-                "group": "Empower",
-                "pages": [
-                  {
-                    "group": "Agentic AI",
-                    "pages": [
-                      "docs/ai/empower/agentic-ai/overview",
-                      "docs/ai/empower/agentic-ai/getting-started",
-                      "docs/ai/empower/agentic-ai/manage-ai-agents"
-                    ]
-                  },
-                  {
-                    "group": "Natural Language Understanding",
-                    "pages": [
-                      "docs/ai/empower/nlu/overview",
-                      {
-                        "group": "Intents",
-                        "pages": [
-                          "docs/ai/empower/nlu/intents/ml-intents",
-                          "docs/ai/empower/nlu/intents/annotations",
-                          "docs/ai/empower/nlu/intents/conditions",
-                          "docs/ai/empower/nlu/intents/intent-analyzer",
-                          "docs/ai/empower/nlu/intents/intent-hierarchy",
-                          "docs/ai/empower/nlu/intents/intent-mapping-priority",
-                          "docs/ai/empower/nlu/intents/intent-upload-download",
-                          "docs/ai/empower/nlu/intents/reject-intents",
-                          "docs/ai/empower/nlu/intents/rule-intents",
-                          "docs/ai/empower/nlu/intents/trigger-intent",
-                          "docs/ai/empower/nlu/intents/yes-no-intents",
-                          "docs/ai/train/intent-trainer"
-                        ]
-                      },
-                      {
-                        "group": "Slots and Lexicons",
-                        "pages": [
-                          "docs/ai/empower/nlu/slots-and-lexicons/lexicons",
-                          "docs/ai/empower/nlu/slots-and-lexicons/slots",
-                          "docs/ai/empower/nlu/slots-and-lexicons/any-slots"
-                        ]
-                      },
-                      "docs/ai/empower/nlu/slot-fillers",
-                      "docs/ai/empower/nlu/text-cleaner",
-                      {
-                        "group": "External NLU",
-                        "pages": [
-                          "docs/ai/empower/nlu/external/overview",
-                          "docs/ai/empower/nlu/external/no-nlu",
-                          "docs/ai/empower/nlu/external/nlu-connectors",
-                          "docs/ai/empower/nlu/external/external-nlu-intent-recognition",
-                          "docs/ai/empower/nlu/external/intent-reranking",
-                          "docs/ai/empower/nlu/external/nlu-transformers"
-                        ]
-                      },
-                      {
-                        "group": "NLU Attachments",
-                        "pages": [
-                          "docs/ai/empower/nlu/attachments/attached-flows",
-                          "docs/ai/empower/nlu/attachments/attached-lexicons",
-                          "docs/ai/empower/nlu/attachments/attachments"
-                        ]
-                      },
-                      {
-                        "group": "Other",
-                        "pages": [
-                          "docs/ai/empower/nlu/language-support",
-                          "docs/ai/empower/nlu/nlu-warnings"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "group": "Large Language Models",
-                    "pages": [
-                      "docs/ai/empower/llms/overview",
-                      "docs/ai/empower/llms/model-support-by-feature",
-                      {
-                        "group": "Providers",
-                        "pages": [
-                          "docs/ai/empower/llms/providers/all-providers",
-                          "docs/ai/empower/llms/providers/microsoft-azure-openai",
-                          "docs/ai/empower/llms/providers/openai",
-                          "docs/ai/empower/llms/providers/openai-compatible",
-                          "docs/ai/empower/llms/providers/anthropic",
-                          "docs/ai/empower/llms/providers/google-vertex-ai",
-                          "docs/ai/empower/llms/providers/google-gemini",
-                          "docs/ai/empower/llms/providers/aleph-alpha",
-                          "docs/ai/empower/llms/providers/amazon-bedrock",
-                          "docs/ai/empower/llms/providers/mistral"
-                        ]
-                      },
-                      "docs/ai/empower/llms/fallback",
-                      "docs/ai/empower/llms/llm-session-token-counter",
-                      "docs/ai/empower/llms/other-operations"
-                    ]
-                  },
-                  "docs/ai/empower/generative-ai",
+                  "docs/ai/agents/build/persona",
                   {
                     "group": "Knowledge AI",
                     "pages": [
-                      "docs/ai/empower/knowledge-ai/overview",
-                      "docs/ai/empower/knowledge-ai/activate",
-                      "docs/ai/empower/knowledge-ai/getting-started",
-                      "docs/ai/empower/knowledge-ai/knowledge-store",
+                      "docs/ai/agents/build/knowledge-ai/overview",
+                      "docs/ai/agents/build/knowledge-ai/activate",
+                      "docs/ai/agents/build/knowledge-ai/getting-started",
+                      "docs/ai/agents/build/knowledge-ai/knowledge-store",
                       {
                         "group": "Knowledge Source",
                         "pages": [
-                          "docs/ai/empower/knowledge-ai/knowledge-source/knowledge-source",
+                          "docs/ai/agents/build/knowledge-ai/knowledge-source/knowledge-source",
                           {
                             "group": "Text Formats",
                             "pages": [
-                              "docs/ai/empower/knowledge-ai/knowledge-source/text-formats/ctxt",
-                              "docs/ai/empower/knowledge-ai/knowledge-source/text-formats/pdf",
-                              "docs/ai/empower/knowledge-ai/knowledge-source/text-formats/web-page"
+                              "docs/ai/agents/build/knowledge-ai/knowledge-source/text-formats/ctxt",
+                              "docs/ai/agents/build/knowledge-ai/knowledge-source/text-formats/pdf",
+                              "docs/ai/agents/build/knowledge-ai/knowledge-source/text-formats/web-page"
                             ]
                           },
                           {
                             "group": "Text Extraction",
                             "pages": [
-                              "docs/ai/empower/knowledge-ai/knowledge-source/text-extraction/overview",
-                              "docs/ai/empower/knowledge-ai/knowledge-source/text-extraction/basic-parser",
-                              "docs/ai/empower/knowledge-ai/knowledge-source/text-extraction/advanced-parser",
-                              "docs/ai/empower/knowledge-ai/knowledge-source/text-extraction/azure-ai"
+                              "docs/ai/agents/build/knowledge-ai/knowledge-source/text-extraction/overview",
+                              "docs/ai/agents/build/knowledge-ai/knowledge-source/text-extraction/basic-parser",
+                              "docs/ai/agents/build/knowledge-ai/knowledge-source/text-extraction/advanced-parser",
+                              "docs/ai/agents/build/knowledge-ai/knowledge-source/text-extraction/azure-ai"
                             ]
                           },
-                          "docs/ai/empower/knowledge-ai/knowledge-source/knowledge-source-tags"
+                          "docs/ai/agents/build/knowledge-ai/knowledge-source/knowledge-source-tags"
                         ]
                       },
                       {
                         "group": "Knowledge Chunk",
                         "pages": [
-                          "docs/ai/empower/knowledge-ai/knowledge-chunk/knowledge-chunk",
-                          "docs/ai/empower/knowledge-ai/knowledge-chunk/knowledge-chunk-editor"
+                          "docs/ai/agents/build/knowledge-ai/knowledge-chunk/knowledge-chunk",
+                          "docs/ai/agents/build/knowledge-ai/knowledge-chunk/knowledge-chunk-editor"
                         ]
                       },
                       {
                         "group": "Knowledge Search and Extraction",
                         "pages": [
-                          "docs/ai/empower/knowledge-ai/knowledge-search-and-extraction/search-extract-output",
-                          "docs/ai/empower/knowledge-ai/knowledge-search-and-extraction/ai-copilot-knowledge"
+                          "docs/ai/agents/build/knowledge-ai/knowledge-search-and-extraction/search-extract-output",
+                          "docs/ai/agents/build/knowledge-ai/knowledge-search-and-extraction/ai-copilot-knowledge"
                         ]
                       },
-                      "docs/ai/empower/knowledge-ai/distance-value-change-after-migration"
+                      "docs/ai/agents/build/knowledge-ai/distance-value-change-after-migration"
                     ]
-                  }
+                  },
+                  {
+                    "group": "AI Agent Memory",
+                    "pages": [
+                      "docs/ai/agents/ai-agent-memory/overview",
+                      "docs/ai/agents/ai-agent-memory/input",
+                      "docs/ai/agents/ai-agent-memory/context",
+                      "docs/ai/agents/ai-agent-memory/profile"
+                    ]
+                  },
+                  "docs/ai/agents/build/tools-and-fulfillment",
+                  {
+                    "group": "Generative AI and LLMs",
+                    "pages": [
+                      "docs/ai/agents/build/generative-ai",
+                      "docs/ai/agents/build/llms/overview",
+                      "docs/ai/agents/build/llms/model-support-by-feature",
+                      {
+                        "group": "Providers",
+                        "pages": [
+                          "docs/ai/agents/build/llms/providers/all-providers",
+                          "docs/ai/agents/build/llms/providers/microsoft-azure-openai",
+                          "docs/ai/agents/build/llms/providers/openai",
+                          "docs/ai/agents/build/llms/providers/openai-compatible",
+                          "docs/ai/agents/build/llms/providers/anthropic",
+                          "docs/ai/agents/build/llms/providers/google-vertex-ai",
+                          "docs/ai/agents/build/llms/providers/google-gemini",
+                          "docs/ai/agents/build/llms/providers/aleph-alpha",
+                          "docs/ai/agents/build/llms/providers/amazon-bedrock",
+                          "docs/ai/agents/build/llms/providers/mistral"
+                        ]
+                      },
+                      "docs/ai/agents/build/llms/fallback",
+                      "docs/ai/agents/build/llms/llm-session-token-counter",
+                      "docs/ai/agents/build/llms/other-operations"
+                    ]
+                  },
+                  "docs/ai/agents/build/voice"
                 ]
               },
               {
-                "group": "Test and Debug",
+                "group": "Test",
                 "pages": [
+                  "docs/ai/agents/test/testing-your-ai-agents",
+                  "docs/ai/agents/test/simulator",
                   {
                     "group": "Interaction Panel",
                     "pages": [
-                      "docs/ai/test/interaction-panel/overview",
-                      "docs/ai/test/interaction-panel/context",
-                      "docs/ai/test/interaction-panel/input",
-                      "docs/ai/test/interaction-panel/profile",
-                      "docs/ai/test/interaction-panel/state"
+                      "docs/ai/agents/test/interaction-panel/overview",
+                      "docs/ai/agents/test/interaction-panel/state"
                     ]
                   },
-                  "docs/ai/test/demo-webchat",
-                  "docs/ai/test/logs",
-                  "docs/ai/test/playbooks",
-                  "docs/ai/test/voice-preview"
+                  "docs/ai/agents/test/demo-webchat",
+                  "docs/ai/agents/test/logs",
+                  "docs/ai/agents/test/playbooks",
+                  "docs/ai/agents/test/voice-preview"
                 ]
               },
               {
                 "group": "Deploy",
                 "pages": [
+                  "docs/ai/agents/deploy/deploying-your-ai-agents",
                   {
-                    "group": "Endpoints",
+                    "group": "Endpoint Settings",
                     "pages": [
-                      "docs/ai/deploy/endpoints/overview",
-                      "docs/ai/deploy/endpoints/data-protection-and-analytics",
-                      "docs/ai/deploy/endpoints/session-management",
-                      "docs/ai/deploy/endpoints/handover-settings",
-                      "docs/ai/deploy/endpoints/real-time-translation-settings",
-                      "docs/ai/deploy/endpoints/file-storage",
-                      "docs/ai/deploy/endpoints/content-conversion",
-                      "docs/ai/deploy/endpoints/testing-mode",
-                      "docs/ai/deploy/endpoints/inject-and-notify",
-                      {
-                        "group": "Transformers",
-                        "pages": [
-                          "docs/ai/deploy/endpoints/transformers/transformers",
-                          "docs/ai/deploy/endpoints/transformers/input-transformer",
-                          "docs/ai/deploy/endpoints/transformers/output-transformer",
-                          "docs/ai/deploy/endpoints/transformers/execution-finished-transformer",
-                          "docs/ai/deploy/endpoints/transformers/notify-transformer",
-                          "docs/ai/deploy/endpoints/transformers/inject-transformer"
-                        ]
-                      }
+                      "docs/ai/agents/deploy/endpoints/overview",
+                      "docs/ai/agents/deploy/endpoints/data-protection-and-analytics",
+                      "docs/ai/agents/deploy/endpoints/session-management",
+                      "docs/ai/agents/deploy/endpoints/handover-settings",
+                      "docs/ai/agents/deploy/endpoints/real-time-translation-settings",
+                      "docs/ai/agents/deploy/endpoints/file-storage",
+                      "docs/ai/agents/deploy/endpoints/content-conversion",
+                      "docs/ai/agents/deploy/endpoints/testing-mode",
+                      "docs/ai/agents/deploy/endpoints/inject-and-notify"
                     ]
                   },
                   {
                     "group": "Endpoint Reference",
                     "pages": [
-                      "docs/ai/deploy/endpoint-reference/overview",
-                      "docs/ai/deploy/endpoint-reference/8x8",
-                      "docs/ai/deploy/endpoint-reference/amazon-alexa",
-                      "docs/ai/deploy/endpoint-reference/amazon-lex",
-                      "docs/ai/deploy/endpoint-reference/audiocodes",
-                      "docs/ai/deploy/endpoint-reference/avaya-cpaas",
-                      "docs/ai/deploy/endpoint-reference/azure-bot-services",
-                      "docs/ai/deploy/endpoint-reference/bandwidth",
-                      "docs/ai/deploy/endpoint-reference/dialogflow",
-                      "docs/ai/deploy/endpoint-reference/facebook-messenger",
-                      "docs/ai/deploy/endpoint-reference/genesys",
-                      "docs/ai/deploy/endpoint-reference/intercom",
-                      "docs/ai/deploy/endpoint-reference/line-messenger",
-                      "docs/ai/deploy/endpoint-reference/microsoft-teams",
-                      "docs/ai/deploy/endpoint-reference/nice",
-                      "docs/ai/deploy/endpoint-reference/rest",
-                      "docs/ai/deploy/endpoint-reference/ringcentral-engage",
-                      "docs/ai/deploy/endpoint-reference/socketio",
-                      "docs/ai/deploy/endpoint-reference/slack",
-                      "docs/ai/deploy/endpoint-reference/sunshine-conversations",
-                      "docs/ai/deploy/endpoint-reference/twilio",
-                      "docs/ai/deploy/endpoint-reference/userlike",
-                      "docs/ai/deploy/endpoint-reference/voice-copilot",
-                      "docs/ai/deploy/endpoint-reference/voice-gateway",
-                      "docs/ai/deploy/endpoint-reference/webchat",
-                      "docs/ai/deploy/endpoint-reference/webhook",
-                      "docs/ai/deploy/endpoint-reference/whatsapp",
-                      "docs/ai/deploy/endpoint-reference/workplace-by-fb"
+                      "docs/ai/agents/deploy/endpoint-reference/webchat",
+                      "docs/ai/agents/deploy/endpoint-reference/voice-gateway",
+                      "docs/ai/agents/deploy/endpoint-reference/whatsapp",
+                      {
+                        "group": "More Endpoints",
+                        "pages": [
+                          "docs/ai/agents/deploy/endpoint-reference/overview",
+                          "docs/ai/agents/deploy/endpoint-reference/8x8",
+                          "docs/ai/agents/deploy/endpoint-reference/amazon-alexa",
+                          "docs/ai/agents/deploy/endpoint-reference/amazon-lex",
+                          "docs/ai/agents/deploy/endpoint-reference/audiocodes",
+                          "docs/ai/agents/deploy/endpoint-reference/avaya-cpaas",
+                          "docs/ai/agents/deploy/endpoint-reference/azure-bot-services",
+                          "docs/ai/agents/deploy/endpoint-reference/bandwidth",
+                          "docs/ai/agents/deploy/endpoint-reference/dialogflow",
+                          "docs/ai/agents/deploy/endpoint-reference/facebook-messenger",
+                          "docs/ai/agents/deploy/endpoint-reference/genesys",
+                          "docs/ai/agents/deploy/endpoint-reference/intercom",
+                          "docs/ai/agents/deploy/endpoint-reference/line-messenger",
+                          "docs/ai/agents/deploy/endpoint-reference/microsoft-teams",
+                          "docs/ai/agents/deploy/endpoint-reference/nice",
+                          "docs/ai/agents/deploy/endpoint-reference/rest",
+                          "docs/ai/agents/deploy/endpoint-reference/ringcentral-engage",
+                          "docs/ai/agents/deploy/endpoint-reference/socketio",
+                          "docs/ai/agents/deploy/endpoint-reference/slack",
+                          "docs/ai/agents/deploy/endpoint-reference/sunshine-conversations",
+                          "docs/ai/agents/deploy/endpoint-reference/twilio",
+                          "docs/ai/agents/deploy/endpoint-reference/userlike",
+                          "docs/ai/agents/deploy/endpoint-reference/voice-copilot",
+                          "docs/ai/agents/deploy/endpoint-reference/webhook",
+                          "docs/ai/agents/deploy/endpoint-reference/workplace-by-fb"
+                        ]
+                      }
                     ]
                   },
-                  "docs/ai/deploy/snapshots"
+                  "docs/ai/agents/deploy/snapshots"
                 ]
               },
               {
                 "group": "Analyze",
                 "pages": [
-                  "docs/ai/analyze/overview",
+                  "docs/ai/agents/analyze/overview",
                   {
                     "group": "Collecting Data",
                     "pages": [
-                      "docs/ai/analyze/collecting-data",
-                      "docs/ai/analyze/user-and-session-identification"
+                      "docs/ai/agents/analyze/collecting-data",
+                      "docs/ai/agents/analyze/user-and-session-identification"
                     ]
                   },
-                  "docs/ai/analyze/insights",
-                  "docs/ai/analyze/odata",
-                  "docs/ai/analyze/call-tracing",
-                  "docs/ai/analyze/contact-profiles",
+                  "docs/ai/agents/analyze/insights",
+                  "docs/ai/agents/analyze/odata",
+                  "docs/ai/agents/analyze/call-tracing",
+                  "docs/ai/agents/analyze/contact-profiles",
                   {
                     "group": "Goals and Tasks",
                     "pages": [
-                      "docs/ai/analyze/goals-and-tasks/overview",
-                      "docs/ai/analyze/goals-and-tasks/tasks",
-                      "docs/ai/analyze/goals-and-tasks/goals"
+                      "docs/ai/agents/analyze/goals-and-tasks/overview",
+                      "docs/ai/agents/analyze/goals-and-tasks/tasks",
+                      "docs/ai/agents/analyze/goals-and-tasks/goals"
                     ]
                   }
                 ]
@@ -549,10 +462,9 @@
                 "pages": [
                   "docs/ai/escalate/handover-reference/overview",
                   "docs/ai/escalate/handover-reference/live-agent",
-                  "docs/ai/escalate/handover-reference/chatwoot",
+                  "docs/ai/escalate/handover-reference/salesforce-miaw",
                   "docs/ai/escalate/handover-reference/ring-central-engage",
                   "docs/ai/escalate/handover-reference/salesforce",
-                  "docs/ai/escalate/handover-reference/salesforce-miaw",
                   "docs/ai/escalate/handover-reference/genesys-cloud-guest-chat",
                   {
                     "group": "Genesys Cloud Open Messaging",
@@ -567,121 +479,238 @@
                       }
                     ]
                   },
-                  "docs/ai/escalate/handover-reference/8x8"
+                  "docs/ai/escalate/handover-reference/8x8",
+                  "docs/ai/escalate/handover-reference/chatwoot"
                 ]
               },
+              "docs/ai/escalate/ai-copilot",
               {
                 "group": "Handover Features",
                 "pages": [
-                  "docs/ai/escalate/user-inactivity-detection"
+                  "docs/ai/escalate/handover-concepts/user-inactivity-detection",
+                  "docs/ai/escalate/handover-concepts/handover-status"
                 ]
-              },
-              "docs/ai/escalate/ai-copilot"
+              }
             ]
           },
           {
-            "group": "Administration",
+            "group": "Platform Features",
             "pages": [
+              "docs/ai/platform-features/overview",
               {
-                "group": "User Menu",
+                "group": "Natural Language Understanding",
                 "pages": [
-                  "docs/ai/administer/user-menu/overview",
-                  "docs/ai/administer/user-menu/my-profile",
-                  "docs/ai/administer/hotkeys"
-                ]
-              },
-              {
-                "group": "Access Management",
-                "pages": [
+                  "docs/ai/platform-features/nlu/overview",
                   {
-                    "group": "Admin Center",
+                    "group": "Intents",
                     "pages": [
-                      "docs/ai/administer/access/admin-center/overview",
-                      "docs/ai/administer/access/admin-center/dashboard",
-                      "docs/ai/administer/access/admin-center/access-control",
-                      "docs/ai/administer/access/admin-center/audit-events",
-                      {
-                        "group": "Global Resources",
-                        "pages": [
-                          "docs/ai/administer/access/admin-center/global-resources/overview",
-                          "docs/ai/administer/access/admin-center/global-resources/global-llms",
-                          "docs/ai/administer/access/admin-center/global-resources/global-connections"
-                        ]
-                      }
+                      "docs/ai/platform-features/nlu/intents/ml-intents",
+                      "docs/ai/platform-features/nlu/intents/annotations",
+                      "docs/ai/platform-features/nlu/intents/conditions",
+                      "docs/ai/platform-features/nlu/intents/intent-analyzer",
+                      "docs/ai/platform-features/nlu/intents/intent-hierarchy",
+                      "docs/ai/platform-features/nlu/intents/intent-mapping-priority",
+                      "docs/ai/platform-features/nlu/intents/intent-upload-download",
+                      "docs/ai/platform-features/nlu/intents/reject-intents",
+                      "docs/ai/platform-features/nlu/intents/rule-intents",
+                      "docs/ai/platform-features/nlu/intents/trigger-intent",
+                      "docs/ai/platform-features/nlu/intents/yes-no-intents",
+                      "docs/ai/platform-features/nlu/intent-trainer"
                     ]
                   },
                   {
-                    "group": "Project and Members",
+                    "group": "Slots and Lexicons",
                     "pages": [
-                      "docs/ai/administer/access/project-settings",
-                      "docs/ai/administer/access/members"
+                      "docs/ai/platform-features/nlu/slots-and-lexicons/lexicons",
+                      "docs/ai/platform-features/nlu/slots-and-lexicons/slots",
+                      "docs/ai/platform-features/nlu/slots-and-lexicons/any-slots"
                     ]
                   },
-                  "docs/ai/administer/access/management-ui"
-                ]
-              },
-              "docs/ai/administer/limitations",
-              "docs/ai/administer/billing"
-            ]
-          },
-          {
-            "group": "Developer Reference",
-            "pages": [
-              "docs/ai/developers/api-and-cli",
-              "docs/ai/developers/client-libraries",
-              "docs/ai/developers/extension-framework"
-            ]
-          },
-          {
-            "group": "Install, Configure, and Migrate",
-            "pages": [
-              "docs/ai/installation/access-to-cognigy-ai",
-              "docs/ai/installation/about",
-              "docs/ai/installation/browser-requirements",
-              "docs/ai/installation/architecture",
-              {
-                "group": "On-Premises",
-                "pages": [
-                  "docs/ai/installation/overview",
-                  "docs/ai/installation/version-compatibility-matrix",
-                  "docs/ai/installation/prerequisites",
-                  "docs/ai/installation/pre-installation-checklist",
-                  "docs/ai/installation/installation-process",
-                  "docs/ai/installation/reset-init-user-credentials",
-                  "docs/ai/installation/backups",
+                  "docs/ai/platform-features/nlu/slot-fillers",
+                  "docs/ai/platform-features/nlu/text-cleaner",
                   {
-                    "group": "Upgrade and Migration Guides",
+                    "group": "External NLU",
                     "pages": [
-                      "docs/ai/installation/migration/overview",
-                      "docs/ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration",
-                      "docs/ai/installation/migration/kustomize-to-helm-migration",
-                      "docs/ai/installation/migration/efs-provisioner-to-efs-csi-migration",
-                      "docs/ai/installation/migration/azure-file-to-azure-csi-migration",
-                      "docs/ai/installation/migration/from-nlu-v1-to-v2-migration",
-                      "docs/ai/installation/migration/single-replica-redis-to-redis-ha-migration",
-                      "docs/ai/installation/migration/weaviate-upgrade-to-1.22.5",
-                      "docs/ai/installation/migration/from-weaviate-to-qdrant"
+                      "docs/ai/platform-features/nlu/external/overview",
+                      "docs/ai/platform-features/nlu/external/no-nlu",
+                      "docs/ai/platform-features/nlu/external/nlu-connectors",
+                      "docs/ai/platform-features/nlu/external/external-nlu-intent-recognition",
+                      "docs/ai/platform-features/nlu/external/intent-reranking",
+                      "docs/ai/platform-features/nlu/external/nlu-transformers"
+                    ]
+                  },
+                  {
+                    "group": "NLU Attachments",
+                    "pages": [
+                      "docs/ai/platform-features/nlu/attachments/attached-flows",
+                      "docs/ai/platform-features/nlu/attachments/attached-lexicons",
+                      "docs/ai/platform-features/nlu/attachments/attachments"
+                    ]
+                  },
+                  {
+                    "group": "Other",
+                    "pages": [
+                      "docs/ai/platform-features/nlu/language-support",
+                      "docs/ai/platform-features/nlu/nlu-warnings"
                     ]
                   }
                 ]
               },
               {
-                "group": "SaaS",
+                "group": "CognigyScript",
                 "pages": [
-                  "docs/ai/installation/saas-service-health",
-                  "docs/ai/installation/ip-ranges-shared-environments"
+                  "docs/ai/platform-features/cognigyscript",
+                  "docs/ai/platform-features/tokens"
                 ]
               },
               {
-                "group": "Single Sign-on (SSO)",
+                "group": "Translation and Localization",
                 "pages": [
-                  "docs/ai/installation/single-sign-on-saml2",
-                  "docs/ai/installation/single-signin-openid-connect"
+                  "docs/ai/platform-features/translation-and-localization/localization",
+                  "docs/ai/platform-features/translation-and-localization/auto-translation",
+                  "docs/ai/platform-features/translation-and-localization/real-time-translation"
+                ]
+              },
+              "docs/ai/platform-features/connections",
+              "docs/ai/platform-features/packages"
+            ]
+          },
+          {
+            "group": "For Developers",
+            "pages": [
+              "docs/ai/advanced-tools/extensions",
+              "docs/ai/advanced-tools/functions",
+              {
+                "group": "Code Node",
+                "pages": [
+                  "docs/ai/advanced-tools/code/overview",
+                  "docs/ai/advanced-tools/code/actions",
+                  "docs/ai/advanced-tools/code/modules",
+                  "docs/ai/advanced-tools/code/channel-output",
+                  "docs/ai/advanced-tools/code/ai-default-channel-formats",
+                  "docs/ai/advanced-tools/code/analytics-data"
+                ]
+              },
+              {
+                "group": "Transformers",
+                "pages": [
+                  "docs/ai/advanced-tools/transformers/transformers",
+                  "docs/ai/advanced-tools/transformers/input-transformer",
+                  "docs/ai/advanced-tools/transformers/output-transformer",
+                  "docs/ai/advanced-tools/transformers/execution-finished-transformer",
+                  "docs/ai/advanced-tools/transformers/notify-transformer",
+                  "docs/ai/advanced-tools/transformers/inject-transformer"
+                ]
+              },
+              {
+                "group": "Developer Reference",
+                "pages": [
+                  "docs/ai/advanced-tools/developers/api-and-cli",
+                  "docs/ai/advanced-tools/developers/client-libraries",
+                  "docs/ai/advanced-tools/developers/extension-framework"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Administration and Installation",
+            "pages": [
+              "docs/ai/administer/limitations",
+              "docs/ai/administer/billing",
+              {
+                "group": "Administration",
+                "pages": [
+                  {
+                    "group": "User Menu",
+                    "pages": [
+                      "docs/ai/administer/user-menu/overview",
+                      "docs/ai/administer/user-menu/my-profile",
+                      "docs/ai/administer/hotkeys"
+                    ]
+                  },
+                  {
+                    "group": "Access Management",
+                    "pages": [
+                      {
+                        "group": "Admin Center",
+                        "pages": [
+                          "docs/ai/administer/access/admin-center/overview",
+                          "docs/ai/administer/access/admin-center/dashboard",
+                          "docs/ai/administer/access/admin-center/access-control",
+                          "docs/ai/administer/access/admin-center/audit-events",
+                          {
+                            "group": "Global Resources",
+                            "pages": [
+                              "docs/ai/administer/access/admin-center/global-resources/overview",
+                              "docs/ai/administer/access/admin-center/global-resources/global-llms",
+                              "docs/ai/administer/access/admin-center/global-resources/global-connections"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Project and Members",
+                        "pages": [
+                          "docs/ai/administer/access/project-settings",
+                          "docs/ai/administer/access/members"
+                        ]
+                      },
+                      "docs/ai/administer/access/management-ui"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Install, Configure, and Migrate",
+                "pages": [
+                  "docs/ai/administer/installation/access-to-cognigy-ai",
+                  "docs/ai/administer/installation/about",
+                  "docs/ai/administer/installation/browser-requirements",
+                  "docs/ai/administer/installation/architecture",
+                  {
+                    "group": "On-Premises",
+                    "pages": [
+                      "docs/ai/administer/installation/overview",
+                      "docs/ai/administer/installation/version-compatibility-matrix",
+                      "docs/ai/administer/installation/prerequisites",
+                      "docs/ai/administer/installation/pre-installation-checklist",
+                      "docs/ai/administer/installation/installation-process",
+                      "docs/ai/administer/installation/reset-init-user-credentials",
+                      "docs/ai/administer/installation/backups",
+                      {
+                        "group": "Upgrade and Migration Guides",
+                        "pages": [
+                          "docs/ai/administer/installation/migration/overview",
+                          "docs/ai/administer/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration",
+                          "docs/ai/administer/installation/migration/kustomize-to-helm-migration",
+                          "docs/ai/administer/installation/migration/efs-provisioner-to-efs-csi-migration",
+                          "docs/ai/administer/installation/migration/azure-file-to-azure-csi-migration",
+                          "docs/ai/administer/installation/migration/from-nlu-v1-to-v2-migration",
+                          "docs/ai/administer/installation/migration/single-replica-redis-to-redis-ha-migration",
+                          "docs/ai/administer/installation/migration/weaviate-upgrade-to-1.22.5",
+                          "docs/ai/administer/installation/migration/from-weaviate-to-qdrant"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "SaaS",
+                    "pages": [
+                      "docs/ai/administer/installation/saas-service-health",
+                      "docs/ai/administer/installation/ip-ranges-shared-environments"
+                    ]
+                  },
+                  {
+                    "group": "Single Sign-on (SSO)",
+                    "pages": [
+                      "docs/ai/administer/installation/single-sign-on-saml2",
+                      "docs/ai/administer/installation/single-signin-openid-connect"
+                    ]
+                  }
                 ]
               }
             ]
           }
-
         ]
       },
       {
