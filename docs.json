@@ -55,13 +55,13 @@
               {
                 "group": "Build",
                 "pages": [
-                  "docs/ai/agents/build/ai-agents-overview",
+                  "docs/ai/agents/build/manage-ai-agents",
                   {
                     "group": "Projects and Flows",
                     "pages": [
                       "docs/ai/agents/build/projects",
-                      "docs/ai/agents/build/flows",
-                      "docs/ai/agents/build/flow-editor",
+                      "docs/ai/agents/build/flows/overview",
+                      "docs/ai/agents/build/flows/editor",
                       {
                         "group": "Nodes",
                         "pages": [

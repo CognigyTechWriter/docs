@@ -24,15 +24,16 @@ def extract_paths_from_docs(data, prefix='docs/ai'):
     
     return paths
 
-def get_actual_files(start_path='docs/ai'):
+def get_actual_files(start_paths=['docs/ai', 'docs/ai-copilot']):
     actual_files = set()
-    for root, _, files in os.walk(start_path):
-        for file in files:
-            if file.endswith('.mdx'):
-                # Convert to relative path from docs/ai and remove .mdx extension
-                rel_path = os.path.join(root, file)
-                rel_path = rel_path[:-4]  # Remove .mdx extension
-                actual_files.add(rel_path)
+    for start_path in start_paths:
+        for root, _, files in os.walk(start_path):
+            for file in files:
+                if file.endswith('.mdx'):
+                    # Convert to relative path and remove .mdx extension
+                    rel_path = os.path.join(root, file)
+                    rel_path = rel_path[:-4]  # Remove .mdx extension
+                    actual_files.add(rel_path)
     return actual_files
 
 def main():
