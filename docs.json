@@ -687,7 +687,15 @@
       {
         "dropdown": "Cognigy.AI API",
         "icon": "terminal",
-        "openapi": "https://api-trial.cognigy.ai/openapi/openapi-viewer.json"
+        "groups": [
+          {
+            "group": "API",
+            "openapi": {
+              "source": "https://api-trial.cognigy.ai/openapi/openapi-viewer.json",
+              "directory": "cognigy-api"
+            }
+          }
+        ]
       },
       {
         "dropdown": "Voice Gateway",
