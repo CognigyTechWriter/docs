@@ -20,36 +20,44 @@ To start using an Aleph Alpha model with Cognigy.AI features, follow these steps
 
 You can add a model using one of the following interfaces:
 
-- [GUI](#add-a-model-via-gui)
-- [API](#add-a-model-via-the-api)
+<Tabs>
+  <Tab title="GUI">
+    You can add a model provided by Aleph Alpha to Cognigy.AI in **Build > LLM**. To add the model, you will need the following parameters:
+    
+    <Tabs>
+      <Tab title="Standard Model">
+        | Parameter  | Description                                                                                                                                                                                                                                                                                  |
+        |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+        | Token      | Enter the key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/).                                                                                                                                                                                                   |
+        | Custom URL | This parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL. For example, `https://api.aleph-alpha.com`. |
+      </Tab>
+      <Tab title="Custom Model">
+        | Parameter  | Description                                                                                                                                                                                                                                                                                  |
+        |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+        | Model Type | Select the **Completion** type.                                                                                                                                                                                                                                                              |
+        | Model Name | Enter the name of the model that you want to use as a custom model. To find model names, refer to the [Aleph Alpha](https://docs.aleph-alpha.com/docs/Deprecated%20Luminous/Deprecated-Luminous/model-card/) documentation.<br></br>                                                                     |
+        | Token      | Enter the key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/).                                                                                                                                                                                                   |
+        | Custom URL | This parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL. For example, `https://api.aleph-alpha.com`. |
+      </Tab>
+    </Tabs>
 
-### Add a Model via GUI
-
-You can add a model provided by Aleph Alpha to Cognigy.AI in **Build > LLM**. To add the model, you will need the following parameters:
-
-=== "Standard Model"
-
-    | Parameter  | Description                                                                                                                                                                                                                                                                                  |
-    |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Token      | Enter the key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/).                                                                                                                                                                                                   |
-    | Custom URL | This parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL. For example, `https://api.aleph-alpha.com`. |
-
-=== "Custom Model"
-
-    | Parameter  | Description                                                                                                                                                                                                                                                                                  |
-    |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Model Type | Select the **Completion** type.                                                                                                                                                                                                                                                              |
-    | Model Name | Enter the name of the model that you want to use as a custom model. To find model names, refer to the [Aleph Alpha](https://docs.aleph-alpha.com/docs/Deprecated%20Luminous/Deprecated-Luminous/model-card/) documentation.<br>                                                                      |
-    | Token      | Enter the key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/).                                                                                                                                                                                                   |
-    | Custom URL | This parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL. For example, `https://api.aleph-alpha.com`. |
-
-Apply changes. Check if the connection was set up by clicking **Test**.
-
-{! _includes/ai/generative-ai/add-model-via-api.md !}
+    Apply changes. Check if the connection was set up by clicking **Test**.
+  </Tab>
+  <Tab title="API">
+    You can add either a standard or custom model using the [Cognigy.AI API POST /v2.0/largelanguagemodels](https://api-trial.cognigy.ai/openapi#post-/v2.0/largelanguagemodels) request.
+    Then, test your connection for the created model via the [Cognigy.AI API POST /v2.0/largelanguagemodels/{largeLanguageModelId}/test](https://api-trial.cognigy.ai/openapi#post-/v2.0/largelanguagemodels/-largeLanguageModelId-/test).
+  </Tab>
+</Tabs>
 
 ## Apply the Model
 
-{! _includes/ai/generative-ai/apply-model.md !}
+To apply a model, follow these steps:
+
+1. In the left-side menu of the Project, go to **Manage > Settings**. 
+2. Go to the section based on your use case for using a model:
+    - **Generative AI Settings**. In the **Generative AI Settings** section, activate **Enable Generative AI Features**. This setting is toggled on by default if you have previously set up the Generative AI credentials.
+    - **Knowledge AI Settings**. Use this section if you need to add a model for Knowledge AI. Select a model for the **Knowledge Search** and **Answer Extraction** features. Refer to the [list of standard models](https://docs.cognigy.com/ai/empower/llms/model-support-by-feature/) and find the models that support these features. 
+3. Navigate to the desired feature and select a model from the list. If there are no models available for the selected feature, the system will automatically select **None**. Save changes.
 
 ## More Information
 
